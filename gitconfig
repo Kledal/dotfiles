@@ -1,18 +1,21 @@
 [alias]
-	lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
-	co = checkout
-	d = diff
-	st = status -s
-	pl = pull
-	ps = push
-	br = branch
-	pb = "!git push origin \"$(git rev-parse --abbrev-ref HEAD)\""
-	delete-merged-branches = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
+  lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
+  co = checkout
+  d = diff
+  st = status -s
+  pl = pull
+  ps = push
+  br = branch
+  pb = "!git push origin \"$(git rev-parse --abbrev-ref HEAD)\""
+  delete-merged-branches = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
+  up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+  cob = checkout -b
+  amend = commit -a --amend
 [user]
-	name = Kledal
-	email = alex.kledal@gmail.com
+  name = Kledal
+  email = alex.kledal@gmail.com
 [credential]
-	helper = cache --timeout=2628000
+  helper = cache --timeout=2628000
 [color]
  diff = auto
  status = auto
@@ -39,4 +42,3 @@ editor = vim
 autosetuprebase = always
 [push]
 	default = current
-
