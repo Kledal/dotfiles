@@ -20,6 +20,8 @@ Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'killphi/vim-ruby-refactoring'
 Plugin 'tmhedberg/matchit'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'tpope/vim-endwise'
 call vundle#end()            " required
 
 execute pathogen#infect()
@@ -49,7 +51,7 @@ set nofoldenable                  "dont fold by default
 set hidden                        " Handle multiple buffers better.
 set title                         " Set the terminal's title
 set number
-set relativenumber                        " Show line numbers.
+"set relativenumber                        " Show line numbers.
 set ruler                         " Show cursor position.
 set wildmode=list:longest         " Complete files like a shell.
 set wildmenu                      " Enhanced command line completion.
@@ -77,8 +79,6 @@ autocmd BufWritePre * :%s/\s\+$//e " auto remove trailing whitespace
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 autocmd StdinReadPre * let s:std_in=1
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
 
 " Syntastic config
 set statusline+=%#warningmsg#
@@ -119,14 +119,18 @@ inoremap <C-S> <C-O>:update<CR>
 " #######################################
 " Plugin configuration
 " #######################################
+" CTRL-P
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
+" Fugitive
 set statusline+=%{fugitive#statusline()}
 " airline options
 let g:airline_powerline_fonts=1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_theme='base16'
-let g:Powerline_symbols = 'fancy'
-set guifont=DejaVu_Sans_Mono_For_Powerline:h12
 
 " Vim-ruby-refactoring
 :nnoremap <leader>rap  :RAddParameter<cr>
