@@ -18,8 +18,12 @@ bind -T root WheelDownPane if-shell -F -t = "#{alternate_on}" "select-pane -t =;
 bind-key -t vi-copy WheelUpPane halfpage-up
 bind-key -t vi-copy WheelDownPane halfpage-down
 
-# THEME
-# set -g @colors-solarized '256'
+######################
+#### Key bindings ####
+######################
+#split window and fix path for tmux 1.9
+bind | split-window -h -c "#{pane_current_path}"
+bind - split-window -v -c "#{pane_current_path}"
 
 # automatically renumber tmux windows
 set -g renumber-windows on

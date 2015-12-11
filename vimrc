@@ -129,9 +129,10 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set statusline+=%{fugitive#statusline()}
 " airline options
 let g:airline_powerline_fonts=1
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-let g:airline_theme='base16'
+"let g:airline_left_sep=''
+"let g:airline_right_sep=''
+let g:airline_theme='papercolor'
+let g:airline#extensions#hunks#enabled=0
 
 " Vim-ruby-refactoring
 :nnoremap <leader>rap  :RAddParameter<cr>
