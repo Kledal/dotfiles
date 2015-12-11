@@ -22,6 +22,7 @@ Plugin 'killphi/vim-ruby-refactoring'
 Plugin 'tmhedberg/matchit'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'tpope/vim-endwise'
+Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end()            " required
 
 execute pathogen#infect()
