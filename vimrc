@@ -23,6 +23,8 @@ Plugin 'tmhedberg/matchit'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'tpope/vim-endwise'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'mattn/emmet-vim'
+Plugin 'henrik/vim-ruby-runner'
 call vundle#end()            " required
 
 execute pathogen#infect()
@@ -98,6 +100,9 @@ let g:syntastic_warning_symbol='⚠'
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
+
+" Im a noob map W to w
+:command W w
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j

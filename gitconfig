@@ -17,28 +17,28 @@
 [credential]
   helper = cache --timeout=2628000
 [color]
- diff = auto
- status = auto
- branch = auto
- interactive = auto
- ui = true
- pager = true
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
 [color "branch"]
- current = yellow reverse
- local = yellow
- remote = green
+  current = yellow reverse
+  local = yellow
+  remote = green
 [color "diff"]
- meta = yellow bold
- frag = magenta bold
- old = red bold
- new = green bold
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
 [color "status"]
- added = yellow
- changed = green
- untracked = cyan
+  added = yellow
+  changed = green
+  untracked = cyan
 [core]
-editor = vim
+  editor = vim
 [branch]
-autosetuprebase = always
+  autosetuprebase = always
 [push]
-	default = current
+  default = current
