@@ -25,6 +25,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'mattn/emmet-vim'
 Plugin 'henrik/vim-ruby-runner'
+Plugin 'elixir-lang/vim-elixir'
 call vundle#end()            " required
 
 execute pathogen#infect()
