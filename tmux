@@ -1,7 +1,7 @@
 set -g default-command "reattach-to-user-namespace -l zsh"
 # tmux display things in 256 colors
 set -g default-terminal "screen-256color"
-set -g status-utf8 on
+#set -g status-utf8 on
 set -g history-limit 20000
 
 # Sane scrolling
@@ -79,7 +79,6 @@ set-option -g pane-active-border-fg white
 set-option -g pane-active-border-bg default
 
 ##+ status bar:
-set-option -g status-utf8 on
 set-option -g status-justify right
 set-option -g status-bg '#0e0e0e'
 set-option -g status-fg '#222222'

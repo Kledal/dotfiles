@@ -131,7 +131,7 @@ inoremap <C-S> <C-O>:update<CR>
 " CTRL-P
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/bower_components/*,*/node_modules/*,*/tmp/*,*.so,*.swp,*.zip
 
 " Fugitive
 set statusline+=%{fugitive#statusline()}
