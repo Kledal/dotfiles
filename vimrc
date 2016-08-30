@@ -97,6 +97,9 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
+" Suppress netrw header
+let g:netrw_banner=0
+
 " #######################################
 " Keybindings
 " #######################################

@@ -12,8 +12,8 @@
   cob = checkout -b
   amend = commit -a --amend
 [user]
-  name = Alexander Kledal
-  email = alex.kledal@gmail.com
+	name = Alexander Kledal
+	email = 201371052@iha.dk
 [credential]
   helper = cache --timeout=2628000
 [color]
