@@ -28,6 +28,7 @@ Plugin 'henrik/vim-ruby-runner'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'fatih/vim-go'
 call vundle#end()            " required
 
 execute pathogen#infect()
