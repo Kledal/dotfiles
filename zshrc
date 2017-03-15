@@ -49,11 +49,11 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(osx docker docker-machine tmux git chruby rails ruby bundler heroku ruby-install kubectl gcloud)
+plugins=(git brew osx tmux rails bundler ruby)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -88,16 +88,23 @@ export EDITOR="vim"
 export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
 
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+#source /usr/local/share/chruby/chruby.sh
+#source /usr/local/share/chruby/auto.sh
 
 # The next line enables shell command completion for gcloud.
-source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+#source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 export NVM_DIR="/Users/alexander/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # matlab mysql driver
-export CLASSPATH="/Users/alexander/mysql-connector-java-5.1.39/mysql-connector-java-5.1.39-bin.jar:$CLASSPATH"
+#export CLASSPATH="/Users/alexander/mysql-connector-java-5.1.39/mysql-connector-java-5.1.39-bin.jar:$CLASSPATH"
 
-export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:`yarn global bin`"
+
+# Go stuff
+export GOPATH=$HOME/Repos/go/dep
+export PATH=$PATH:$GOPATH/bin
+
+source ~/.bin/tmuxinator.zsh

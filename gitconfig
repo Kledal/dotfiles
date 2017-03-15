@@ -13,7 +13,7 @@
   amend = commit -a --amend
 [user]
 	name = Alexander Kledal
-	email = 201371052@iha.dk
+	email = alex.kledal@gmail.com
 [credential]
   helper = cache --timeout=2628000
 [color]
@@ -21,8 +21,7 @@
   status = auto
   branch = auto
   interactive = auto
-  ui = true
-  pager = true
+  ui = auto
 [color "branch"]
   current = yellow reverse
   local = yellow
