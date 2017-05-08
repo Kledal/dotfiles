@@ -11,6 +11,7 @@
   up = !git pull --rebase --prune $@ && git submodule update --init --recursive
   cob = checkout -b
   amend = commit -a --amend
+  rubocop = "!git diff master --cached --name-only | xargs -0 rubocop-select | xargs rubocop"
 [user]
 	name = Alexander Kledal
 	email = alex.kledal@gmail.com
