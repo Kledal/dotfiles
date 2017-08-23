@@ -111,6 +111,9 @@ set splitright
 " Im a noob map W to w
 :command W w
 
+" Map esc to jj
+inoremap jj <Esc>
+
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
