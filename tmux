@@ -56,7 +56,7 @@ bind -r L resize-pane -R 10
 
 # Title
 set-option -g set-titles on
-set-option -g set-titles-string "#T - #W"
+set-option -g set-titles-string "#S / #W"
 
 ######################
 #### DESIGN CHANGES ###

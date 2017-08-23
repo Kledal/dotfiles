@@ -4,7 +4,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'ggreer/the_silver_searcher'
 Plugin 'tpope/vim-sensible'
 Plugin 'kien/ctrlp.vim'
@@ -16,7 +16,8 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
-Plugin 'bling/vim-airline'
+"Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'killphi/vim-ruby-refactoring'
 Plugin 'tmhedberg/matchit'
@@ -164,4 +165,4 @@ let g:airline#extensions#hunks#enabled=0
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " YouCompleteMe
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+"let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"

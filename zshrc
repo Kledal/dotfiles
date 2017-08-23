@@ -107,4 +107,4 @@ export PATH="$PATH:`yarn global bin`"
 export GOPATH=$HOME/Repos/go/dep
 export PATH=$PATH:$GOPATH/bin
 
-source ~/.bin/tmuxinator.zsh
+#source ~/.bin/tmuxinator.zsh
