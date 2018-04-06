@@ -22,16 +22,18 @@
   status = auto
   branch = auto
   interactive = auto
-  ui = auto
+	ui = true
 [color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
+	meta = yellow
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	commit = yellow bold
+	whitespace = red reverse
 [color "status"]
   added = yellow
   changed = green
@@ -42,3 +44,8 @@
   autosetuprebase = always
 [push]
   default = current
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
